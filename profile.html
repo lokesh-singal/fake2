@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="profile-style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <a href="./index.html">
+                <p>Home</p>
+            </a>
+            <a class="selected" href="./profile.html">
+                <p>Profile</p>
+            </a>
+            <a href="./contact.html">
+                <p>Contact</p>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="about" data-aos="fade-up" data-aos-duration="1000">
+                <p class="text-about">About</p>
+                <p class="description">I am a seasoned Frontend Developer with a specialization in JavaScript. My
+                    proficiency lies in comprehending, evaluating, and assuming
+                    ownership of requirements, ensuring alignment with the expectations of all stakeholders involved. I
+                    possess
+                    comprehensive knowledge of all stages within the development cycle, coupled with a mastery of coding
+                    languages.
+                    Additionally, I boast extensive experience in collaborative teamwork and demonstrate exceptional
+                    proficiency in
+                    problem-solving.</p>
+            </div>
+            <div class="skills" data-aos="fade-up" data-aos-duration="1400">
+                <p class="text-skills">Skills</p>
+                <div class="grid-skill">
+                    <p class="skill">Html - Advanced</p>
+                    <p class="skill">Css - Advanced</p>
+                    <p class="skill">Bootstrap - Advanced</p>
+                    <p class="skill">JavaScript - Proficient</p>
+                    <p class="skill">JQuery - Proficient</p>
+                    <p class="skill">React Js - Proficient</p>
+                </div>
+            </div>
+            <div class="projects" data-aos="fade-up" data-aos-duration="1200">
+                <p class="text-project">Projects</p>
+                <div class="grid-project">
+                    <div class="project-list">
+                        <a href="https://lokesh-singal.github.io/Notes-App/" target="_blank"><img class="project-img"
+                                src="./images/Notes-App.png" alt="Notes-App"></a>
+                        <p class="project-description">Notes-App</p>
+                    </div>
+                    <div class="project-list">
+                        <a href="https://lokesh-singal.github.io/Form-Validator/" target="_blank"><img
+                                class="project-img" src="./images/Form-Validator.png" alt="Form-Validator"></a>
+                        <p class="project-description">Form-Validator</p>
+                    </div>
+                    <div class="project-list">
+                        <a href="https://lokesh-singal.github.io/Stopwatch/" target="_blank"><img class="project-img"
+                                src="./images/Stopwatch.png" alt="Stopwatch"></a>
+                        <p class="project-description">Stopwatch</p>
+                    </div>
+                    <div class="project-list">
+                        <a href="https://lokesh-singal.github.io/Responsive-Page/" target="_blank"><img
+                                class="project-img" src="./images/Form-Validator.png" alt="Responsive-Page"></a>
+                        <p class="project-description">Responsive-Page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        ofset: 200,
+        once: true,
+      });
+    </script>
+</body>
+
+</html>

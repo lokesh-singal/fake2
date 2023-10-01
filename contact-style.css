@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main-container */
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    /* background: rgb(250, 194, 219);
+    background: linear-gradient(142deg,
+            rgba(250, 194, 219, 1) 0%,
+            rgba(144, 237, 217, 1) 100%); */
+}
+
+/* Main-container > Navbar */
+.navbar {
+    background: rgb(239 236 234 / 50%);
+    display: flex;
+    margin: 2rem 0;
+    padding: 0.25rem;
+    border-radius: 2rem;
+    position: sticky;
+    top: 2rem;
+    backdrop-filter: blur(0.35rem);
+}
+
+.navbar p {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(83, 78, 78);
+    padding: 0.65rem 1.75rem;
+    letter-spacing: 0.015rem;
+}
+
+.navbar>a:hover {
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.navbar .selected {
+    background-color: white;
+    border-radius: 2rem;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    width: 80%;
+    height: 75vh;
+    background: rgb(195, 223, 255);
+    background: linear-gradient(142deg,
+            rgba(195, 223, 255, 1) 0%,
+            rgba(255, 238, 245, 1) 100%);
+    box-shadow: rgba(94, 94, 94, 0.35) 0px 5px 15px;
+}
+
+/* Container > outline */
+.outline {
+    /* height: 100%; */
+    width: 80%;
+    margin-top: 4.25rem;
+    margin-left: 2.25rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.map iframe {
+    width: 400px;
+    height: 350px;
+    border: 0;
+    border-radius: 1.25rem;
+}
+
+.name {
+    color: #182153;
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: 0.075rem;
+    margin-top: 1.5rem;
+}
+
+.upper-head {
+    color: #182153;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.075rem;
+    margin-top: 1.5rem;
+}
+
+.lower {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.hr {
+    margin-bottom: 3.5rem;
+}
+
+/* Container > Buttons */
+.buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
+.buttons a {
+    margin-right: 0.75rem;
+    text-decoration: none;
+}
+
+.buttons p {
+    padding: 0.5rem 0.75rem 0.65rem 0.75rem;
+    letter-spacing: 0.015rem;
+    font-size: 0.90rem;
+    border-radius: 0.75rem;
+}
+
+.buttons p:hover {
+    cursor: pointer;
+}
+
+.resume-btn {
+    color: white;
+    background-color: #182153;
+}
+
+.linkedin-btn {
+    color: white;
+    background-color: #182153;
+}
+
+.github-btn {
+    color: white;
+    background-color: #182153;
+}
+
+/* Mobile-Responsive */
+@media (max-width: 480px) {
+
+    /* navbar */
+    .navbar {
+        margin: 1rem 0;
+        position: sticky;
+        top: 2rem;
+        background-color: rgba(232, 229, 228, 0.5);
+    }
+
+    .navbar a {
+        padding: 0.65rem 1.5rem;
+        color: black;
+    }
+
+    .navbar p {
+        letter-spacing: 0.01rem;
+    }
+
+    /* Container */
+    .main-container {
+        background: rgb(195, 223, 255);
+        background: linear-gradient(142deg,
+                rgba(195, 223, 255, 1) 0%,
+                rgba(255, 238, 245, 1) 100%);
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        /* background: white; */
+        background: rgb(195, 223, 255);
+        background: linear-gradient(142deg,
+                rgba(195, 223, 255, 1) 0%,
+                rgba(255, 238, 245, 1) 100%);
+        box-shadow: none;
+    }
+
+    /* Container > outline */
+    .outline {
+        /* height: 100%; */
+        width: 84%;
+        margin-top: 0rem;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .map iframe {
+        width: 350px;
+        height: 350px;
+        border: 0;
+        border-radius: 1.25rem;
+    }
+
+    .name {
+        margin-top: 2rem;
+        font-size: 2.15rem;
+    }
+}
