@@ -211,7 +211,7 @@ html {
     border-radius: 2rem;
   }
 
-  .resume-btn {
+/*   .resume-btn {
     background-color: rgba(232, 229, 228, 0.5);
   }
 
@@ -225,5 +225,5 @@ html {
 
   .buttons p:hover {
     background-color: white;
-  }
+  } */
 }
